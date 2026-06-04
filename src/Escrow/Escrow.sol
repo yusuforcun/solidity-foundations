@@ -25,7 +25,10 @@ contract Escrow{
     function withdraw() external {
         require(isApproved , "Not approved yet");
         require(msg.sender == beneficiary , "Only beneficiary can withdraw");
+        uint256 balance = address(this).balance;
         require(address(this).balance > 0 , "No funds to withdraw");
+
+        isApproved = false ;
 
         uint256 balance = address(this).balance;
         (bool success , ) = beneficiary.call{value: balance}("");
