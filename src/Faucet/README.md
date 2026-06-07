@@ -10,7 +10,7 @@ A robust, secure, and gas-efficient Faucet implementation built with **Solidity*
 
 ## 📖 Overview
 
-The Faucet contract allows users to withdraw a fixed amount of Ether. To prevent abuse and spam, the contract enforces a cooldown period for each address. This implementation is designed to teach best practices in smart contract development, including:
+The Faucet contract allows users to withdraw a fixed amount of Ether. To prevent abuse  spam, the contract enforces a cooldown period for each address. This implementation is designed to teach best practices in smart contract development, including:
 
 - **Security**: Preventing re-entrancy and handling state safely.
 - **Gas Efficiency**: Optimized state variable access and transfer methods.
